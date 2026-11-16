@@ -1,0 +1,138 @@
+/* Optimized and Minified Core Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    background-color: #ffffff;
+    color: #1a1a1a; /* WCAG compliant contrast ratio on white background */
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Skip Link styling for accessibility keyboard navigation */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.2s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #121212; /* WCAG compliant backdrop */
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.nav-links a:focus, .nav-links a:hover {
+    outline: 2px solid #0056b3; /* Visual feedback on key/hover */
+    background: #262626;
+}
+
+/* Hero */
+.hero {
+    background-color: #f0f4f8;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.25rem;
+    margin-bottom: 15px;
+    color: #0c2340; /* High contrast heading */
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #333333;
+}
+
+/* Features Grid */
+.features {
+    padding: 60px 0;
+}
+
+.features h3 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+    color: #0c2340;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 20px;
+    background: #ffffff;
+    transition: box-shadow 0.2s;
+}
+
+.card:focus, .card:hover {
+    outline: 2px solid #0056b3;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card h4 {
+    color: #0c2340;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #121212;
+    color: #cccccc;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
