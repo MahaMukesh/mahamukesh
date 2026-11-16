@@ -3,54 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Web Page Portfolio</title>
+    <title>Week 2: Responsive Design Showcase</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container">
-            <h1 class="logo">MyPortfolio</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
+    <header class="main-header">
+        <div class="container navbar">
+            <div class="logo">FlexStore</div>
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="cta-btn">Contact</a>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <h2>Transforming Wireframes into Code</h2>
-            <p>Welcome to my static web page mockup. Built using clean, semantic HTML5 and modern CSS techniques.</p>
-            <a href="#features" class="btn">Explore Features</a>
-        </div>
-    </section>
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <h2>Fluid, Adaptive, and Accessible</h2>
+                <p>Experience seamless user experience across smartphones, tablets, and high-resolution desktops. Built using CSS Grid, Flexbox, and fluid typography.</p>
+            </div>
+        </section>
 
-    <section id="features" class="features">
-        <div class="container">
-            <h3>Core Features</h3>
-            <div class="grid">
-                <div class="card">
-                    <h4>Semantic HTML5</h4>
-                    <p>Utilizing proper landmarks like header, nav, section, and footer to ensure accessibility.</p>
-                </div>
-                <div class="card">
-                    <h4>Responsive Design</h4>
-                    <p>Styled with flexible layouts and media queries to look perfect on any screen size.</p>
-                </div>
-                <div class="card">
-                    <h4>Clean CSS</h4>
-                    <p>Organized stylesheets structured for maintenance, readability, and modern aesthetics.</p>
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h3>Our Adaptive Grid Showcase</h3>
+                <p class="section-desc">These cards automatically shift, shrink, and scale to fit your current screen dimensions.</p>
+                <div class="responsive-grid">
+                    <div class="grid-card">
+                        <div class="card-img-placeholder">Fluid Media</div>
+                        <h4>Media Query Adaptive</h4>
+                        <p>Leveraging break-point configurations to optimize typography, spacing, and grid column structure.</p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="card-img-placeholder">Flexible Layouts</div>
+                        <h4>Percentage-based Flex</h4>
+                        <p>Using fluid parameters and relative measurements instead of strict static pixels.</p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="card-img-placeholder">Viewport Scaling</div>
+                        <h4>Dynamic Typography</h4>
+                        <p>Text elements that dynamically scale and align depending on viewport constraints.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer class="footer">
+    <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2023 Intern Webpage Project. All rights reserved.</p>
+            <p>&copy; 2023 FlexStore - Week 2 Responsive Design. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
