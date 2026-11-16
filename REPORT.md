@@ -1,15 +1,15 @@
-# Week 2 Report: Implementation of Responsive Web Design
+# Technical Report: JavaScript Interactivity Integration
 
-## 1. Planning and Methods Used
-To construct an adaptable structure that displays properly across desktops, tablets, and mobile devices, we integrated relative units and fluid scaling properties:
-- **Fluid Typography:** Utilized the CSS `clamp()` function (`font-size: clamp(2rem, 5vw, 3.5rem)`) allowing header fonts to scale fluidly without sudden layout shifts.
-- **Adaptive Grid:** Implemented CSS Grid using `auto-fit` and relative `minmax(300px, 1fr)` column constraints. This automatically calculates columns depending on the viewport width.
-- **Flexible Navigation:** Flexbox layout wraps standard headers vertically once screen dimensions collapse past mobile boundaries.
+## 1. Document Objectives & Strategy
+To bring standard static structures to life without reliance on monolithic frameworks, we target precise DOM interactions:
+- **Clean Modular Actions:** Interactive operations (Theme Toggles, Stateful Counter widgets, Dynamic List managers) remain entirely distinct in structural separation.
+- **Direct DOM Node Creation:** Using lightweight methods such as `document.createElement()` and local listeners preventing code collisions or security issues.
 
-## 2. Key Media Queries
-- **Tablet Breakpoint (`max-width: 768px`):** Realigns the global navigation menu elements vertically, standardizes alignment, and minimizes excess padding within the hero container.
-- **Mobile Portrait Breakpoint (`max-width: 480px`):** Rescales navigation to single-column lists and adapts interactive buttons to occupy 100% of the viewport width.
+## 2. Implemented Interactivities
+1. **Dynamic CSS Variables & Theme Toggling:** Modifies the global body attribute (`data-theme`) which allows CSS attributes in root layout scope to swap palettes gracefully.
+2. **Active Stateful Counter:** Implements basic operations keeping internal script counters perfectly sync'd with DOM elements alongside state-reflective colors (Green for values over zero, Red for values under zero).
+3. **Event-driven Task Lister:** Manages form default event interception and dynamically generates tasks equipped with functional destruction event capabilities.
 
-## 3. Challenges & Resolutions
-- **Challenge:** Elements dropping off the screen or overflowing horizontally on small screens under 360px.
-- **Resolution:** Introduced a generic `* { box-sizing: border-box; }` reset alongside setting a fluid width constraint (`width: 90%`) on general body wrapper containers.
+## 3. Engineering Challenges & Solutions
+- **Challenge:** Managing dynamic action bindings on elements created iteratively in run-time memory.
+- **Resolution:** Rather than broad event delegation structures, custom delete handlers are configured individually during runtime creation of task nodes to ensure clean memory footprint lifecycles.

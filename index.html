@@ -3,59 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 2: Responsive Design Showcase</title>
+    <title>Week 3: Interactive Web Showcase</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container navbar">
-            <div class="logo">FlexStore</div>
-            <nav class="nav-menu">
-                <a href="#home">Home</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#about">About</a>
-                <a href="#contact" class="cta-btn">Contact</a>
-            </nav>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Interactify</h1>
+            <button id="theme-toggle" class="toggle-btn">Toggle Dark Mode</button>
         </div>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="container hero-content">
-                <h2>Fluid, Adaptive, and Accessible</h2>
-                <p>Experience seamless user experience across smartphones, tablets, and high-resolution desktops. Built using CSS Grid, Flexbox, and fluid typography.</p>
+    <main class="container">
+        <section class="hero">
+            <h2>Dynamic User Experience</h2>
+            <p>Enhancing web elements dynamically using pure, vanilla JavaScript DOM manipulation and event handlers.</p>
+        </section>
+
+        <section class="interactive-demo">
+            <h3>1. Interactive Counter</h3>
+            <div class="counter-container">
+                <button id="decrement-btn" class="ctrl-btn">-</button>
+                <span id="counter-value">0</span>
+                <button id="increment-btn" class="ctrl-btn">+</button>
             </div>
         </section>
 
-        <section id="gallery" class="gallery-section">
-            <div class="container">
-                <h3>Our Adaptive Grid Showcase</h3>
-                <p class="section-desc">These cards automatically shift, shrink, and scale to fit your current screen dimensions.</p>
-                <div class="responsive-grid">
-                    <div class="grid-card">
-                        <div class="card-img-placeholder">Fluid Media</div>
-                        <h4>Media Query Adaptive</h4>
-                        <p>Leveraging break-point configurations to optimize typography, spacing, and grid column structure.</p>
-                    </div>
-                    <div class="grid-card">
-                        <div class="card-img-placeholder">Flexible Layouts</div>
-                        <h4>Percentage-based Flex</h4>
-                        <p>Using fluid parameters and relative measurements instead of strict static pixels.</p>
-                    </div>
-                    <div class="grid-card">
-                        <div class="card-img-placeholder">Viewport Scaling</div>
-                        <h4>Dynamic Typography</h4>
-                        <p>Text elements that dynamically scale and align depending on viewport constraints.</p>
-                    </div>
-                </div>
+        <section class="interactive-demo">
+            <h3>2. Dynamic Item List Manager</h3>
+            <div class="list-manager">
+                <form id="item-form">
+                    <input type="text" id="item-input" placeholder="Add a new task..." required>
+                    <button type="submit" class="add-btn">Add</button>
+                </form>
+                <ul id="item-list"></ul>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2023 FlexStore - Week 2 Responsive Design. All Rights Reserved.</p>
-        </div>
+    <footer class="footer">
+        <p>&copy; 2023 Interactify. Week 3 Web Interactivity Task.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
