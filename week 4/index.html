@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 4 project demonstrating web page performance optimization and accessibility best practices.">
+    <title>Week 4: Performance & Accessibility Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Accessible Skip Link for Keyboard Users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="navbar" role="banner">
+        <div class="container">
+            <h1 class="logo">AccessiFit</h1>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="#main-content">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <h2 id="hero-heading">Built for Everyone</h2>
+                <p>An optimized experience featuring fast loading speeds, clean structure, and highly accessible landmarks to ensure inclusion across all devices and assistive technologies.</p>
+            </div>
+        </section>
+
+        <section id="features" class="features" aria-labelledby="features-heading">
+            <div class="container">
+                <h3 id="features-heading">Optimized Key Features</h3>
+                <div class="grid">
+                    <article class="card" tabindex="0">
+                        <h4>ARIA Landmarks</h4>
+                        <p>Providing clear roles and properties so screen readers can navigate and interpret the DOM structure cleanly.</p>
+                    </article>
+                    <article class="card" tabindex="0">
+                        <h4>High Contrast UI</h4>
+                        <p>Text styling and backdrops are configured to satisfy WCAG AA contrast ratio requirements for visual clarity.</p>
+                    </article>
+                    <article class="card" tabindex="0">
+                        <h4>Asset Minification</h4>
+                        <p>Reduced redundancy in modern CSS rules ensures faster render-blocking resolution and quick interactive times.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2023 AccessiFit. Dedicated to performance and web standards.</p>
+        </div>
+    </footer>
+</body>
+</html>
