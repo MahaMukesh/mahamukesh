@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2: Responsive Design Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container navbar">
+            <div class="logo">FlexStore</div>
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="cta-btn">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <h2>Fluid, Adaptive, and Accessible</h2>
+                <p>Experience seamless user experience across smartphones, tablets, and high-resolution desktops. Built using CSS Grid, Flexbox, and fluid typography.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h3>Our Adaptive Grid Showcase</h3>
+                <p class="section-desc">These cards automatically shift, shrink, and scale to fit your current screen dimensions.</p>
+                <div class="responsive-grid">
+                    <div class="grid-card">
+                        <div class="card-img-placeholder">Fluid Media</div>
+                        <h4>Media Query Adaptive</h4>
+                        <p>Leveraging break-point configurations to optimize typography, spacing, and grid column structure.</p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="card-img-placeholder">Flexible Layouts</div>
+                        <h4>Percentage-based Flex</h4>
+                        <p>Using fluid parameters and relative measurements instead of strict static pixels.</p>
+                    </div>
+                    <div class="grid-card">
+                        <div class="card-img-placeholder">Viewport Scaling</div>
+                        <h4>Dynamic Typography</h4>
+                        <p>Text elements that dynamically scale and align depending on viewport constraints.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 FlexStore - Week 2 Responsive Design. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
