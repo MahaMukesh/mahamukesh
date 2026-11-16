@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3: Interactive Web Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Interactify</h1>
+            <button id="theme-toggle" class="toggle-btn">Toggle Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Dynamic User Experience</h2>
+            <p>Enhancing web elements dynamically using pure, vanilla JavaScript DOM manipulation and event handlers.</p>
+        </section>
+
+        <section class="interactive-demo">
+            <h3>1. Interactive Counter</h3>
+            <div class="counter-container">
+                <button id="decrement-btn" class="ctrl-btn">-</button>
+                <span id="counter-value">0</span>
+                <button id="increment-btn" class="ctrl-btn">+</button>
+            </div>
+        </section>
+
+        <section class="interactive-demo">
+            <h3>2. Dynamic Item List Manager</h3>
+            <div class="list-manager">
+                <form id="item-form">
+                    <input type="text" id="item-input" placeholder="Add a new task..." required>
+                    <button type="submit" class="add-btn">Add</button>
+                </form>
+                <ul id="item-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Interactify. Week 3 Web Interactivity Task.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
